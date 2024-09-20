@@ -1,0 +1,245 @@
+/* Make the loader fill the entire screen */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000f5; /* You can change the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1.5s ease-out;
+    
+  }
+  
+  /* Stamping animation for loader GIF */
+  @keyframes stamping {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Applying stamping animation to the loader GIF */
+  #loader img {
+    animation: stamping 0.6s ease-out forwards;
+    filter:contrast(200%), saturate(200%);
+    border-radius: 50%;
+  }
+  
+  /* Hide the content initially */
+  .hidden {
+    display: none;
+  }
+  
+  /* Fade-out effect */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+  }
+  
+  
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@font-face {
+    font-family: 'font-1';
+    src: url(./fonts/Luvertown\ Personal\ Use\ Only.ttf);
+
+}
+@font-face {
+    font-family: 'font-2';
+    src: url(./fonts/moenstrum..ttf);
+
+}
+@font-face {
+    font-family: 'font-3';
+    src: url(./fonts/brains_courage/Brains\ Courage\ Demo.otf);
+
+}
+@font-face {
+    font-family: 'font-4';
+    src: url(./fonts/coffee_soda/Coffee\ Soda.ttf);
+
+}
+@font-face {
+    font-family: 'font-5';
+    src: url(./fonts/sportfield_varsity/Sportfield\ Varsity-Grunge.otf);
+
+}
+@font-face {
+    font-family: 'font-6';
+    src: url(./fonts/stanford_breath/Stanford_Breath.ttf);
+
+}
+@font-face {
+    font-family: 'font-7';
+    src: url(./fonts/vintage_brush/VintageBrush.ttf);
+
+}
+
+/* basic */
+
+*{
+    
+    /* background-color: black !important; */
+    color: white !important;
+}
+
+html{
+    /* font-size: 62.5%; */
+}
+body{
+    background-color:white!important;
+}
+.navbar{
+    color: white !important;
+    font-family: 'EB Garamond', system-ui;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.946) !important;
+    overflow: hidden !important;
+}
+.container{
+    background-color: transparent !important;
+}
+.navbar-brand{
+    max-width: 150px !important; 
+    
+    filter:saturate(100%);
+    border-radius: 50%;
+    
+    & .d-inline-block {
+        height: 160px !important; 
+        width: 160px !important; 
+        padding-top: 5%;
+        
+    }
+    img{
+
+        /* max-width: 150; */
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            content: url(./Images/logo/logo.gif);
+            border-radius: 50%;
+            padding-top: 0%;
+            transform: scale(1.1);
+            width: 160px !important;
+            height: 160px !important;
+        }
+    }
+}
+.collapse {
+    
+    
+    & .navbar-nav{
+        gap: 2rem;
+        
+    }
+    
+}
+.nav-item{
+  background-color: transparent !important;           
+}
+.nav-link{
+    color: white !important;
+    font-family: 'EB Garamond', system-ui;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent !important;
+    &:hover{
+        color:#D6AD60 !important;
+        transform: scale(1.1);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #D6AD60;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+.dropdown-menu{
+    border-color: aliceblue !important;
+}
+.dropdown-item{
+    /* background-color: aliceblue !important; */
+    color:rgb(255, 255, 255) !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    &:hover{
+        color:#D6AD60 !important;
+        font-size: 1.42rem;
+        background-color: transparent !important ;
+    }
+
+}
+.active{
+    color:#D6AD60 !important;
+    font-weight: 900;
+    font-size: 1.8rem;
+    
+}
+.form-control{
+    border-color:#D6AD60 !important ;
+    color: white !important;
+    text-align: center;
+    background-color: transparent !important;
+    width:10rem;
+    border-radius: 25px;
+    &:hover{
+        border-color:#D6AD60 !important ;
+        width:15rem;
+        transform: scale(1.1);
+    }
+    &:focus {
+        outline: none; /* Remove the default blue outline */
+        width:15rem;
+
+        border-color: #D6AD60; /* Change the border color when focused */
+        box-shadow: 0 0 5px #D6AD60; /* Add custom shadow color on focus */
+    }
+    
+    
+}
+
+.btn{
+    background-color: #cc9837 !important;
+    color: white !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+    &:hover{
+        background-color:#ba8a30 !important;
+        color: #000000 !important;
+        /* transform: scale(1.1); */
+    }
+    &:focus {
+        outline: none; /* Remove the default blue outline */
+        border-color: #D6AD60; /* Change the border color when focused */
+        box-shadow: 0 0 5px #D6AD60; /* Add custom shadow color on focus */
+    }
+    
+}
+

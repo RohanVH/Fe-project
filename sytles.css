@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@font-face {
+    font-family: 'font-1';
+    src: url(./fonts/Luvertown\ Personal\ Use\ Only.ttf);
+
+}
+@font-face {
+    font-family: 'font-2';
+    src: url(./fonts/moenstrum..ttf);
+
+}
+@font-face {
+    font-family: 'font-3';
+    src: url(./fonts/brains_courage/Brains\ Courage\ Demo.otf);
+
+}
+@font-face {
+    font-family: 'font-4';
+    src: url(./fonts/coffee_soda/Coffee\ Soda.ttf);
+
+}
+@font-face {
+    font-family: 'font-5';
+    src: url(./fonts/sportfield_varsity/Sportfield\ Varsity-Grunge.otf);
+
+}
+@font-face {
+    font-family: 'font-6';
+    src: url(./fonts/stanford_breath/Stanford_Breath.ttf);
+
+}
+@font-face {
+    font-family: 'font-7';
+    src: url(./fonts/vintage_brush/VintageBrush.ttf);
+
+}
+
+/* basic */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000000ee !important;
+}
+
+html{
+    font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:"font-6";
+    font-size:3.2rem;
+}
+p,
+img,
+li,
+a{
+    font-family:"EB Garamond,system-ui";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-decoration: none; 
+    list-style: none;
+    font-weight: 400;
+    color:var(--para-color);
+
+}
+/* theme */
+
+:root{
+    --main-color:#d38d2b;
+    --bg-color:#fff;
+    --bg-color-1:#f5f5f5;
+    --bg-color-2:#141212;
+    --para-color:#fff9f9;
+    --para-color-1:#000;
+}
+
+/* Navbar */
+.section-navbar{
+box-shadow: rgba(241, 241, 241, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+background-color: transparent;
+
+}
+
+
+/* .navbar-brand{
+    max-width: 150px;
+    
+    
+} */
+.skanda-logo{
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        content: url(./Images/logo/logo-gif.gif);
+    }
+    
+ }
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem auto;
+    
+    
+}
+.section-navbar .navbar ul{
+    display: flex;
+    gap: 3.2rem;
+    text-transform:capitalize;
+    
+    & li a{
+        color: var(--para-color);
+        text-transform: uppercase; 
+        font-size: 1.9rem;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        &:hover{
+            color: var(--main-color);
+        }
+        &::after{
+            content: "";
+            width: 0;
+            height: 0.2rem;
+            background-color: var(--main-color);
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+        }
+    
+    }
+}
