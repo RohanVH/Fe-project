@@ -303,7 +303,7 @@ main{
         background: #1e130c !important;
         background: -webkit-linear-gradient(to right,  #9a8478,#1e130c,) !important;
         background: linear-gradient(to right, #9a8478,#1e130c ) !important;
-        padding-bottom: 1%;
+        padding-bottom: 3.2%;
         padding-top: 3.2%;
         justify-content: center;
         align-items: center;
