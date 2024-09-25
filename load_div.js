@@ -1,5 +1,5 @@
 // Select all sections and divs you want to animate
-const sections = document.querySelectorAll('section, div'); // This will select all <section> and <div> elements
+const sections = document.querySelectorAll('section, div,p,h1,footer'); // This will select all <section> and <div> elements
 
 // Create an Intersection Observer
 const observer = new IntersectionObserver((entries) => {
