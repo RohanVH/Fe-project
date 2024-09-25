@@ -277,6 +277,25 @@ body{
     }
     
 }
+/* Hide all divs initially */
+div {
+    opacity: 0;
+    transform: translateY(30px); /* Adjust to your preference */
+    animation-fill-mode: forwards; /* Keep the final state after animation */
+}
+
+/* Animation keyframes for stacking effect */
+@keyframes stackEffect {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Class to trigger animation */
+.visible {
+    animation: stackEffect 0.5s ease-in-out forwards;
+}
 
 
 /* Hero section */
@@ -303,7 +322,8 @@ main{
 
         & .hero-1_sm_heading{
             font-size: 3.2rem !important;
-
+            
+            
         }
         &:hover{
             text-decoration:underline;
@@ -330,27 +350,26 @@ main{
             padding-bottom: 1%;
             position: relative;
             background-color: rgba(36, 36, 36, 0.444);
-                & .custom-shape-divider-top-1727267520 {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    overflow: hidden;
-                                    line-height: 0;
-                                    transform: rotate(180deg);
-                                }
+                & .custom-shape-divider-top-1727281220 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        line-height: 0;
+                    }
 
-                                & .custom-shape-divider-top-1727267520 svg {
-                                    position: relative;
-                                    display: block;
-                                    width: calc(171% + 1.3px);
-                                    height: 93px;
-                                    transform: rotateY(180deg);
-                                }
+                    & .custom-shape-divider-top-1727281220 svg {
+                        position: relative;
+                        display: block;
+                        width: calc(181% + 1.3px);
+                        height: 90px;
+                        transform: rotateY(180deg);
+                    }
 
-                                & .custom-shape-divider-top-1727267520 .shape-fill {
-                                    fill: #1413135b;
-                                }
+                    & .custom-shape-divider-top-1727281220 .shape-fill {
+                        fill: #21212471;
+                    }
         }
         
         
@@ -359,6 +378,7 @@ main{
              
             padding-left:0%;
          }
+         
     }
        
         
@@ -373,9 +393,13 @@ main{
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+        font-size: 1.5rem !important;
+
+        
         
         
     }
+    
     
     & .typed-text{
         font-family: 'sans-serif';
