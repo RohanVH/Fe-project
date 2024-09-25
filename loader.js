@@ -11,6 +11,6 @@ window.addEventListener("load", function () {
         loader.style.display = "none";
         content.classList.remove("hidden"); // Show website content
       }, 1500); // Fade-out timing
-    }, 5000); // Extend the loader duration to 5 seconds before starting fade-out
+    }, 4200); // Extend the loader duration to 5 seconds before starting fade-out
   });
   

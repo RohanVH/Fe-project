@@ -67,8 +67,10 @@
 
               </div>
             </div>
-          </nav>        
-    </header>
+          </nav>
+          
+        </header>
+        <script src="nav.js"></script>
     
     <!-- main -->
     <main>
@@ -83,22 +85,22 @@
                 <div class=" text-center text-md-start ">
                   
                   <!-- heading -->
-                  <h1 class=" display-2 fw-bold  mb-3 hero-1_heading">Transform your beauty at Skanda Beauty Parlour,</h1>
+                  <h1 class=" display-2 fw-bold  mb-3 hero-1_heading"><span class="hero-1_sm_heading">Transform your beauty at</span> <br> Skanda Beauty Parlour,</h1>
                   <!-- lead -->
-                  <p class="lead">Hootagalli's ultimate destination for elegance and style. 
+                  <p class="lead" >Hootagalli's ultimate destination for elegance and style. 
                     Whether it’s a stunning new look or a touch of pampering, 
                     our expert team ensures you leave feeling fabulous! 
                     Visit us today in Ousig Board Colony, Mysore, and let your inner beauty shine.</p>
                 </div>
               </div>
             </div>
-            <div class="offset-lg-1 col-lg-5 col-12 text-center">
-                <div class="position-relative" style="padding-top:1%; padding-bottom: 15%;">
+              <div class="offset-lg-1 col-lg-5 col-12 text-center">
+                <div class="position-relative" style="padding-top:20%; padding-bottom: 15%;">
                     <img src="./Images/hero.jpg" class="img-fluid" style="border-radius: 50%;filter:contrast(120%);">
-                    <div class="position-absolute top-0 mt-7 ms-n6 ms-md-n6 ms-lg-n12 start-0">
+                    <div class="position-absolute top-0 mt-5 ms-n6 ms-md-n6 ms-lg-n12 start-0">
                       <img src="/Images/Hairdyer  3D Animated Icon.gif" class="img-fluid" style="width: 200px;height: 150px;border-radius: 95%; filter: grayscale(100%);">
                     </div>
-                    <div class="position-absolute top-0 mb-8 me-n6 me-md-n4 me-lg-n12 end-0 ">
+                    <div class="position-absolute top-0 mt-5 ms-n6 me-md-n6 me-lg-n12 end-0 ">
                       <img src="./Images/Scissors 3D Animated Icon.gif" class="img-fluid " style="width: 150px;height: 150px;border-radius: 50%;filter:grayscale(100%);">
                     </div>
                     <div class="position-absolute top-50 start-0 translate-middle mt-2 d-xl-block d-none">
@@ -107,7 +109,7 @@
 
 
                 </div>
-                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -116,58 +118,110 @@
 
 
       <!-- Hero-2 -->
-      <section id="image-carousel" class="hero-2" aria-label="Beautiful Images" >
-        <div class="track" >
-          <ul class="list" style="border-style:double; background:rgba(0, 0, 0, 0.829);border-width: 10px;">
-            <li class="slide"  >
-              <img src="Images/image (3).png" alt="" style="height: 730px;width: 95%;" class="mySlides w3-animate-fading" >
-            </li>
-            <li class="slide">
-              <img src="Images/image (6).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-            <li class="slide">
-              <img src="Images/image (11).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-            <li class="slide">
-              <img src="Images/image (12).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-            <li class="slide">
-              <img src="Images/image (15).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-            <li class="slide">
-              <img src="Images/image (9).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-            <li class="slide">
-              <img src="Images/image (13).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-            <li class="slide">
-              <img src="Images/image (14).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-            <li class="slide">
-              <img src="Images/image (14).png" alt="" style="height:730px;width: 95%;" class="mySlides w3-animate-fading">
-            </li>
-          </ul>
-        </div>
-        <script>
-          var myIndex = 0;
-          carousel();
-          
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("slide");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 2000);    
-          }
-          </script>
-      </section>
+    <section id="image-carousel" class="py-md-8 py-6 hero-2" aria-label="Beautiful Images">
 
+
+      <div class="py-lg-14 py-12 bg-cover hero-2-div">
+        
+        
+        <div class="custom-shape-divider-top-1727267520">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
+        </div>
+        
+        
+        <!-- container -->
+        <div class="container">
+          <!-- Row with columns for image and carousel -->
+          <div class="row align-items-center">
+            <h1 class="hero-2_heading">Discover the Glow Our Customers Love!</h1>
+              
+            <!-- Image on the left -->
+            <div class="col-lg-5 col-12 text-center">
+              <div class="position-relative" style="padding-top:6%; padding-bottom: 15%;">
+                <img src="./Images/1727257913859.jpg" class="img-fluid" style="border-radius: 50%;filter:contrast(105%);">
+                    <div class="position-absolute top-0 mt-5 ms-n6 ms-md-n6 ms-lg-n12 start-0" style="background-color: rgba(245, 245, 245, 0.165); border-radius: 50%;margin-bottom:-50px !important;">
+                      <img src="/Images/Massage Animated 3D Icon.gif" class="img-fluid" style="width: 110px;height: 110px;border-radius: 50%; filter: grayscale(100%);">
+                    </div>
+                    <div class="position-absolute top-0 mt-5 ms-n6 me-md-n4 me-lg-n12 end-0 " style="background-color: rgba(245, 245, 245, 0.165); border-radius: 50%;">
+                      <img src="./Images/Hairbrush 3D Animated Icon.gif" class="img-fluid " style="width: 100px;height: 100px;border-radius: 50%; filter: grayscale(100%);">
+                    </div>
+                    <div class="position-absolute top-50 start-0 translate-middle mt-2 d-xl-block d-none" style="background-color: rgba(245, 245, 245, 0.165); border-radius: 50%;">
+                      <img src="./Images/Moisturizer Jar 3D Animated Icon.gif" class="img-fluid " style="width: 100px;height: 100px;border-radius: 50%;filter:grayscale(100%);">
+                    </div>
+                    <div class="position-absolute top-50 end-0  mt-5 d-xl-block d-none" style="background-color: rgba(245, 245, 245, 0.165); border-radius: 50%;">
+                      <img src="./Images/Facial Treatment 3D Animated Icon.gif" class="img-fluid " style="width: 100px;height: 100px;border-radius: 50%;filter:grayscale(100%);">
+                    </div>
+              </div>
+            </div>
+
+            <!-- Carousel on the right -->
+            <div class="offset-lg-1 col-lg-6 col-12">
+              
+              <div class="track">
+                <ul class="list" style=" background:rgba(0, 0, 0, 0.829);border-width: 10px; border-radius: 50px 0 50px 0; box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;">
+                  <li class="slide">
+                    <img src="Images/image (3).png" alt="" style="height: 400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                  <li class="slide">
+                    <img src="Images/image (6).png" alt="" style="height:400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                  <li class="slide">
+                    <img src="Images/image (11).png" alt="" style="height:400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                  <li class="slide">
+                    <img src="Images/image (12).png" alt="" style="height:400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                  <li class="slide">
+                    <img src="Images/image (15).png" alt="" style="height:400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                  <li class="slide">
+                    <img src="Images/image (9).png" alt="" style="height:400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                  <li class="slide">
+                    <img src="Images/image (13).png" alt="" style="height:400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                  <li class="slide">
+                    <img src="Images/image (14).png" alt="" style="height:400px;width: 100%;border-radius: 50px 0 50px 0;" class="mySlides w3-animate-fading">
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          
+          <div style="background-color: rgba(0, 0, 0, 0.516); padding: 35px;border-radius: 10px;">
+            
+            <p class="typed-text" id="typedText" style="text-align: left; font-size: 1.5rem;"></p>
+            
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- JavaScript for image carousel -->
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000);    
+        }
+      </script>
+    </section>
+ 
       
       
+    <script src="hero-1.js"></script>
     </main>
     <!-- main end -->
     
